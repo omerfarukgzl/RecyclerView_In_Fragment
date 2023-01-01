@@ -3,10 +3,12 @@ package com.omtaem.recyclerviewinfragment.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.omtaem.recyclerviewinfragment.R
 import com.omtaem.recyclerviewinfragment.model.Post
+import com.squareup.picasso.Picasso
 
 
 class PostRecyclerAdapter(val postList:ArrayList<Post>) : RecyclerView.Adapter<PostRecyclerAdapter.PostViewHolder>(){
@@ -14,7 +16,11 @@ class PostRecyclerAdapter(val postList:ArrayList<Post>) : RecyclerView.Adapter<P
 
     class PostViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val username : TextView = itemView.findViewById<TextView?>(R.id.textViewUserName)
+        val userImage : ImageView = itemView.findViewById<ImageView?>(R.id.userImage)
+        val postImage : ImageView = itemView.findViewById<ImageView?>(R.id.postImage)
         val postStatement : TextView = itemView.findViewById<TextView?>(R.id.textViewPostStatement)
+
+
 
 
     }
@@ -29,8 +35,8 @@ class PostRecyclerAdapter(val postList:ArrayList<Post>) : RecyclerView.Adapter<P
 
         holder.username.text = currentItem.userName
         holder.postStatement.text =  currentItem.postStatement
-
-
+        Picasso.get().load(currentItem.userImage).into(holder.userImage)
+        Picasso.get().load(currentItem.postImage).into(holder.postImage)
     }
     override fun getItemCount(): Int {
         // rcycler View içerisinde kaç tane satır olacak

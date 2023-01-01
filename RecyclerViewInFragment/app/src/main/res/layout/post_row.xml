@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ECE6E6"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewPostName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#BAF4F4"
+        android:text="Kullanıcı emaili"
+        android:textAlignment="center"
+        android:textColor="#0E08BD"
+        android:textSize="34sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textViewPostTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#F4BFBF"
+        android:text="Kullanıcı Yorumu"
+        android:textAlignment="center"
+        android:textColor="#293673"
+        android:textSize="18sp">
+
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/textViewPostImage"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/ic_launcher_background">
+
+    </ImageView>
+
+
+</LinearLayout>

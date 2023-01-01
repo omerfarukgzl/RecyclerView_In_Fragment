@@ -13,8 +13,8 @@ class PostRecyclerAdapter(val postList:ArrayList<Post>) : RecyclerView.Adapter<P
 
 
     class PostViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-        val textAd : TextView = itemView.findViewById<TextView?>(R.id.textViewPostName)
-        val textKalori : TextView = itemView.findViewById<TextView?>(R.id.textViewPostTitle)
+        val username : TextView = itemView.findViewById<TextView?>(R.id.textViewUserName)
+        val postStatement : TextView = itemView.findViewById<TextView?>(R.id.textViewPostStatement)
 
 
     }
@@ -27,8 +27,8 @@ class PostRecyclerAdapter(val postList:ArrayList<Post>) : RecyclerView.Adapter<P
     override fun onBindViewHolder(holder: PostViewHolder, position: Int) {
         val currentItem = postList[position]
 
-        holder.textAd.text = currentItem.postName
-        holder.textKalori.text =  currentItem.postTitle
+        holder.username.text = currentItem.userName
+        holder.postStatement.text =  currentItem.postStatement
 
 
     }

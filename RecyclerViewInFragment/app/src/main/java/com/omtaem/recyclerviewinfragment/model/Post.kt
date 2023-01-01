@@ -1,8 +1,10 @@
 package com.omtaem.recyclerviewinfragment.model
 
 data class Post (
-    val postName:String?,
-    val postTitle:String?,
+    val postImage:String?,
+    val userImage : String?,
+    val postStatement:String?,
+    val userName :String?
     ){
 
 }

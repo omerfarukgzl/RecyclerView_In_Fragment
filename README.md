@@ -5,24 +5,24 @@
 
 ## App Content
 
-```diff
-+ Architecture 
+
++ **Architecture** 
   
   + View
   + Model
   + ViewModel
   
-+ Library
++ **Library**
   
-  + **lifecycle**
-  + **View Binding**
-  + **livedata**
-  + **SwipeRefreshLayout**
-  + **Picasso**
+  * lifecycle
+  * View Binding
+  * livedata
+  * SwipeRefreshLayout
+  * Picasso
   
-+ UI
++ **UI**
 
-  + **Acvity**
-  + **Fragment**
-  + **Layout**
+  * Acvity
+  * Fragment
+  * Layout
   

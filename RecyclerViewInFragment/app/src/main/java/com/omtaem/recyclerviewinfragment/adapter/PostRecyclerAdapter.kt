@@ -43,4 +43,12 @@ class PostRecyclerAdapter(val postList:ArrayList<Post>) : RecyclerView.Adapter<P
         // (val kitapGorselListesi : ArrayList<Bitmap>) ==> bu listenin eleman sayısına ıulaşmak için constructor da listeyi aldık
         return postList.size
     }
+
+    fun besinListUpdate(newBesinList:List<Post>)// besin listesini guncelleme
+    {
+        postList.clear()
+        postList.addAll(newBesinList)
+        notifyDataSetChanged()
+    }
+
 }

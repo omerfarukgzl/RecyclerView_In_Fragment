@@ -14,7 +14,6 @@
   
 + **Library**
   
-  * lifecycle
   * View Binding
   * livedata
   * SwipeRefreshLayout
